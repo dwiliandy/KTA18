@@ -1,0 +1,46 @@
+@media only screen and (min-width: 1300px) {
+  #sesi1{
+    height: 120vh;
+    background: linear-gradient(to left, rgba(198, 145, 60, 0) 0%, rgba(198, 145, 60, 1) 100%),
+                url('../images/sesi/peter jacob.png');
+    background-position: 550px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
+  #sesi2{
+    height: 120vh;
+    background: linear-gradient(to right, rgba(198, 145, 60, 0) 0%, rgba(198, 145, 60, 0.7) 50%, rgba(198, 145, 60, 1) 80%),
+                url('../images/sesi/nikolaus dachi.jpeg');
+    background-position: -300px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  #sesi3{
+    height: 120vh;
+    background: linear-gradient(to left, rgba(198, 145, 60, 0) 0%, rgba(198, 145, 60, 1) 100%),
+                url('../images/sesi/nikolaus dachi.jpeg');
+    background-position: 550px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  #sesi4{
+    height: 120vh;
+    background: linear-gradient(to right, rgba(198, 145, 60, 0) 0%, rgba(198, 145, 60, .7) 50%, rgba(198, 145, 60, 1) 80%),
+    url('../images/sesi/agustinus titi.jpeg');
+    background-position: -300px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  #sesi5{
+    height: 120vh;
+    background: linear-gradient(to left, rgba(198, 145, 60, 0) 0%, rgba(198, 145, 60, 1) 100%),
+                url('../images/sesi/eliyunus gulo.jpeg');
+    background-position: 550px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}

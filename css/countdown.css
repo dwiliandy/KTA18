@@ -1,0 +1,29 @@
+.countdown_data{
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+.countdown {
+  text-align: center;
+  margin: 50px 0;
+  padding: 0;
+}
+
+.countdown li {
+  color: #ffffff;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.countdown span {
+  font-size: 25px;
+}
+
+.countdown h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
