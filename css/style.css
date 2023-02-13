@@ -108,16 +108,3 @@
       Pages          
   -----------------------------------------*/
 
-  #detail_kta{
-    min-height: 100vh;
-    min-width: 100vw;
-    /* background: linear-gradient(to top right, #d2b48c, #000000); */
-    background-color: #C6913C;
-  }
-  
-  #register{
-    min-height: 100vh;
-    min-width: 100vw;
-    /* background: linear-gradient(to top right, #d2b48c, #000000); */
-    background-color: #C6913C;
-  }
