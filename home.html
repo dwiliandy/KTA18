@@ -24,6 +24,12 @@
 </head>
 
 <body>
+  <!-- PRE LOADER -->
+  <section class="preloader">
+    <div class="spinner">
+      <span class="spinner-rotate"></span>
+    </div>
+  </section>
   
 	<!-- Navbar -->
 	<nav id="navbar" class="navbar navbar-expand-lg pb-3 p-lg-0 sticky-top bg-purple" data-bs-theme="dark">
@@ -367,8 +373,10 @@
 	<!-- {{-- Ajax --}} -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
 
 	<script>
+
 		$.ajaxSetup({
 			headers: {
 				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -391,6 +399,7 @@
 
 		$(document).ready(function() {
 
+      $('.preloader').fadeOut(1000); // set duration in brackets    
 			$('a[href^="#site-main"]').addClass('active');
 
 			//smoothscroll
