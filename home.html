@@ -106,14 +106,14 @@
   <!-- {{-- End About --}} -->
   
   <!-- Testimoni -->
-  <div id="testimoni">
-    <div class="container-fluid">
-      <div class="row py-5 reveal fade-top">
+  <div id="testimoni" style="background-color: #eaeaea;min-height:100vh">
+    <div class="container">
+      <div class="row pt-5 reveal fade-top">
         <div class=" col-10 mx-auto rounded" >
           <div class="slider d-flex testimoni my-auto">
             <div class="card border-0 card-0">
               <div class="row">
-                <div class="button-arrow mt-3 d-flex flex-column align-items-end pe-5">
+                <div class="button-arrow mt-3 d-flex flex-column align-items-end pe-5 " >
                   <div>
                     <button class="pp2"><i class="fas fa-chevron-circle-left fa-xl"></i></button>
                     <button class="nn2"><i class="fas fa-chevron-circle-right fa-xl"></i></button>  
@@ -183,6 +183,32 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-5 rounded" >
+        <div class="button-arrow mt-3 d-flex flex-column align-items-end pe-5 reveal fade-right">
+          <div>
+            <button class="prev2"><i class="fas fa-chevron-circle-left fa-xl"></i></button>
+            <button class="next2"><i class="fas fa-chevron-circle-right fa-xl"></i></button>  
+          </div>
+        </div>
+        <div class="slider d-flex testimoni-video reveal fade-left">
+          <div class="col-md-4 mx-2">
+            <h5 class="testi_video">Testimoni 1</h5>
+            <iframe style="border: 2px solid #552075; border-radius: 5px" src="https://drive.google.com/file/d/1GcvzHAwJ9mQRehbaUBqrP76Sobm5Og7t/preview" width="100%" height="250px" allow="autoplay" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4 mx-2">
+            <h5 class="testi_video">Testimoni 2</h5>
+            <iframe style="border: 2px solid #552075; border-radius: 5px" src="https://drive.google.com/file/d/1gb1SJRe0WrQnph0UZ6-h0S8RCf5t8IMG/preview" width="100%" height="250px" allow="autoplay" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4 mx-2">
+            <h5 class="testi_video">Testimoni 3</h5>
+            <iframe style="border: 2px solid #552075; border-radius: 5px" src="https://drive.google.com/file/d/1o-Y_lmoLN8tphwiG4Fu7-WAxCrEEDjk2/preview" width="100%" height="250px" allow="autoplay" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4 mx-2">
+            <h5 class="testi_video">Testimoni 4</h5>
+            <iframe style="border: 2px solid #552075; border-radius: 5px" src="https://drive.google.com/file/d/1o-Y_lmoLN8tphwiG4Fu7-WAxCrEEDjk2/preview" width="100%" height="250px" allow="autoplay" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -312,6 +338,14 @@
       arrows: true,
       prevArrow: $(".pp2"),
       nextArrow: $(".nn2"),
+    });
+    $('.testimoni-video').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: true,
+      prevArrow: $(".next2"),
+      nextArrow: $(".prev2"),
     });
   });
   

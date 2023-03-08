@@ -166,6 +166,23 @@ body{
   font-size: 1.5em;
 }
 
+.prev2, .next2{
+  border: none;
+  background-color: transparent;
+  color: #180027;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+
+.prev2:hover, .next2:hover{
+  color: #6a1f99;
+}
+
+.testi_video{
+  text-align: center;
+}
+
+
 @media screen and (min-width: 600px) {
 }
 
