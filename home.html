@@ -49,24 +49,24 @@
 					<li class="nav-item mx-auto">
 						<a class="nav-link" href="#about">Tentang</a>
 					</li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#testimoni">Testimoni</a>
+          </li>
 					<li class="nav-item mx-auto">
 						<a class="nav-link" href="#kegiatan">Kegiatan</a>
 					</li>
 					<li class="nav-item mx-auto">
-						<a class="nav-link" href="#testimoni">Testimoni</a>
+            <a class="nav-link" href="#sesi">Sesi</a>
 					</li>
 					<li class="nav-item mx-auto">
-						<a class="nav-link" href="#rundown">Rundown</a>
+            <a class="nav-link" href="#daftar">Daftar</a>
 					</li>
 					<li class="nav-item mx-auto">
-						<a class="nav-link" href="#sesi">Sesi</a>
+            <a class="nav-link" href="#dana">Pencarian Dana</a>
 					</li>
-					<li class="nav-item mx-auto">
-						<a class="nav-link" href="#daftar">Daftar</a>
-					</li>
-					<li class="nav-item mx-auto">
-						<a class="nav-link" href="#dana">Pencarian Dana</a>
-					</li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#rundown">Lokasi</a>
+          </li>
 				</ul>
 			</div>
 		</div>
@@ -271,6 +271,56 @@
 	</section>
 	<!-- End Testimoni -->
 
+  <!-- Kegiatan -->
+  <section id="kegiatan" style="min-height: 100vh;">
+    <h1 class="text-center p-3 reveal fade-bottom "
+			style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight:500">
+			Kegiatan</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-10 mx-auto mb-5">
+					<div class="slider d-flex slide-kegiatan my-auto">
+						<div class="card card-kegiatan">
+              <div class="row" style="max-height: 100vh;overflow:hidden">
+                <h2 class="caption text-center kegiatan" >Eksposisi</h2>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+              </div>
+						</div>
+						<div class="card card-kegiatan">
+              <div class="row" style="max-height: 100vh;overflow:hidden">
+                <h2 class="caption text-center kegiatan" >Kapita Selekta</h2>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+                <div class="col-6 p-0" style="height:200px">
+                  <img src="images/kegiatan/eksposisi.jpeg" class="img-fluid">
+                </div>
+              </div>
+						</div>
+					</div>
+				</div>
+      </div>
+    </div>
+  </section>
+  <!-- End Kegiatan -->
+
 	<!-- {{-- Contact Us --}} -->
 	<section id="location" class="py-4" style="min-height: 100vh;background-color:#552075">
 		<h1 class="text-center p-3 reveal fade-bottom text-white"
@@ -307,8 +357,8 @@
 	</section>
 	<!-- {{-- End Contact Us --}} -->
 
-	<!-- {{-- Form Doa --}} -->
-	<section id="prayer" style="min-height: 100vh">
+  <!-- Form Doa -->
+	<!-- <section id="prayer" style="min-height: 100vh">
 		<div class="parallax d-flex justify-content-center align-items-center">
 			<form class=" p-5 m-4" style="background-color: rgb(85,32,117); opacity: 0.9; border-radius: 30px" action="/">
 				<h1 class="text-center text-white "
@@ -329,8 +379,8 @@
 				</div>
 			</form>
 		</div>
-	</section>
-	<!-- {{-- EndForm Doa --}} -->
+	</section> -->
+  <!-- End Form Doa -->
 	<!-- Footer -->
 	<footer class="text-center text-lg-start text-white" style="background-color: #552075">
 		<div class="container-fluid">
@@ -453,12 +503,26 @@
 				arrows: true,
 				prevArrow: $(".pp2"),
 				nextArrow: $(".nn2"),
+        fade: true,
+        speed: 1000,
+			});
+			$('.slide-kegiatan').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				pauseOnHover: false,
+				arrows: true,
+        speed: 300,
+        prevArrow: '<button class="px-2 prev-keg"><i class="fas fa-chevron-circle-left fa-xl"></i></button>',
+        nextArrow: '<button class="px-2 next-keg"><i class="fas fa-chevron-circle-right fa-xl"></i></button>',
 			});
 			$('.testimoni-video').slick({
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				autoplay: false,
 				arrows: true,
+        lazyLoad: 'ondemand',
 				prevArrow: $(".next2"),
 				nextArrow: $(".prev2"),
 				responsive: [{

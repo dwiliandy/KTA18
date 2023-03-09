@@ -216,7 +216,7 @@ body{
   font-size: 1.5em;
 }
 
-.prev2, .next2{
+.prev2, .next2, .prev-keg, .next-keg{
   border: none;
   background-color: transparent;
   color: #180027;
@@ -230,6 +230,27 @@ body{
 
 .testi_video{
   text-align: center;
+}
+
+.card-kegiatan{
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid #FFD54F;
+}
+
+.caption {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.kegiatan{
+  letter-spacing: .2rem;
+  background-color: rgba(255,213,79,0.8);
 }
 
 
@@ -301,7 +322,7 @@ body{
     margin-right: 60px
   }
 
-  .pp2, .nn2{
+  .pp2, .nn2, .prev-keg, .next-keg, .prev2, .next2{
     padding: 0;
     font-size: 1em;
   }
