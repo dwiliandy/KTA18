@@ -241,7 +241,7 @@ body{
 .kegiatan {
   position: absolute;
   margin: 0;
-  bottom: -10%;
+  bottom: -25%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -253,12 +253,19 @@ body{
                 -1px -1px 0 #000;
   letter-spacing: .2rem;
   /* height: 15%; */
-  padding: 40px 0;
+  padding: 40px 0 35px 0;
   background-image: linear-gradient(to top,rgb(255,213,79) , transparent);
+}
+
+.image-kegiatan{
+  min-height:300px
 }
 
 
 @media screen and (min-width: 600px) {
+  .kegiatan {
+    bottom: -20%;
+  }
 }
 
 @media only screen and (min-width: 992px){
@@ -267,7 +274,11 @@ body{
   }
   #social{
     text-align: right;
-  }  
+  } 
+  
+  .kegiatan {
+    bottom: -15%;
+  }
   
   #slide1{
     margin-top:-160px;
