@@ -139,7 +139,7 @@ body{
 }
 
 .parallax{
-  background-image: url("../images/prayer.webp");
+  background-image: url("../images/slider/ktaxvii2.jpg");
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -216,10 +216,18 @@ body{
   font-size: 1.5em;
 }
 
-.prev2, .next2, .prev-keg, .next-keg{
+.prev-keg, .next-keg{
   border: none;
   background-color: transparent;
+  color: white;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+
+.prev2, .next2{
+  border: none;
   color: #180027;
+  background-color: transparent;
   padding: 20px 0;
   font-size: 1.5em;
 }
