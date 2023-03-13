@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Website untuk Kamp Tahunan Alumni">
 	<title>
-		Kamp Tahunan Alumni
+		KTA XVIII
 	</title>
 	<!-- <link rel="icon" href="images/icon.png"> -->
 	<!-- {{-- Bootstrap --}} -->
@@ -429,8 +429,8 @@
   <!-- End Sesi -->
 
   <!-- Daftar & Pencarian Dana -->
-  <section id="daftar"  style="min-height: 100vh;background-color:white">
-    <div class="row" style="padding-top:70px">
+  <section id="daftar"  style="min-height: 100vh;">
+    <div class="row" style="padding-top:70px;background-color:#552075">
         <div class="col-md-6 text-center justify-content-center align-items-center" style="min-height:100vh;background-color:white">
           <div class="row">
             <h1 class="text-center p-3 reveal fade-bottom"
@@ -477,8 +477,8 @@
   <!-- End Daftar & Pencarian Dana -->
 
 	<!-- {{-- Contact Us --}} -->
-	<section id="lokasi" class="py-4" style="min-height: 100vh;background-color:#552075">
-    <div class="container" style="padding-top:70px">
+	<section id="lokasi" style="min-height: 100vh;background-color:#552075;padding-top:80px">
+    <div class="container">
       <h1 class="text-center p-3 reveal fade-bottom text-white"
         style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight:500">
         Lokasi Acara</h1>
@@ -591,53 +591,31 @@
 			}
 		});
 
+		
+
 		$(document).ready(function() {
 
       $('.preloader').fadeOut(1000); // set duration in brackets    
-			$('a[href^="#site-main"]').addClass('active');
+      var sectionIds = $('a.nav-link');
 
-			//smoothscroll
-			$('.menuitem').on('click', function(e) {
-				e.preventDefault();
-				//  $(document).off("scroll");
-				var athis = this;
-				var target = this.hash,
-					menu = target;
-				$target = $(target);
-				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top + 2
-				}, 800, 'swing', function() {
-					window.location.hash = target;
-					$('.menuitem').removeClass('active');
-					$(athis).addClass('active');
-
-				});
-			});
-
-			$(window).scroll(function(event) {
-				var scrollPos = $(document).scrollTop();
-				if (scrollPos === 0) {
-					$('a[href^="#site-main"]').addClass('active');
-					return;
-				}
-				$('.nav-link').each(function() {
-					var currLink = $(this);
-					var refElement = $(currLink.attr("href"));
-					if (refElement.position().top <= scrollPos && refElement.position().top +
-						refElement.height() > scrollPos) {
-						$('.nav-link').removeClass("active");
-						currLink.addClass("active");
-					} else {
-						currLink.removeClass("active");
-					}
-				});
-			})
-		});
-
-		$(document).ready(function() {
-
-			$('a[href^="#site-main"]').addClass('active');
-
+      $(document).scroll(function(){
+          sectionIds.each(function(){
+  
+              var container = $(this).attr('href');
+              var containerOffset = $(container).offset().top;
+              var containerHeight = $(container).outerHeight();
+              var containerBottom = containerOffset + containerHeight;
+              var scrollPosition = $(document).scrollTop();
+      
+              if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
+                  $(this).addClass('active');
+              } else{
+                  $(this).removeClass('active');
+              }
+      
+      
+          });
+      });
 			$('.testimoni').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
