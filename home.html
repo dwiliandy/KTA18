@@ -241,32 +241,7 @@
             <button class="next2"><i class="fas fa-chevron-circle-right fa-xl"></i></button>
           </div>
         </div>
-        <div class="slider d-flex testimoni-video reveal fade-left">
-          <div class="col-md-4 mx-2">
-            <h5 class="testi_video">Testimoni 1</h5>
-            <iframe style="border: 2px solid #552075; border-radius: 5px"
-              src="https://drive.google.com/file/d/1GcvzHAwJ9mQRehbaUBqrP76Sobm5Og7t/preview" width="100%" height="250px"
-              allow="autoplay" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-4 mx-2">
-            <h5 class="testi_video">Testimoni 2</h5>
-            <iframe style="border: 2px solid #552075; border-radius: 5px"
-              src="https://drive.google.com/file/d/1gb1SJRe0WrQnph0UZ6-h0S8RCf5t8IMG/preview" width="100%" height="250px"
-              allow="autoplay" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-4 mx-2">
-            <h5 class="testi_video">Testimoni 3</h5>
-            <iframe style="border: 2px solid #552075; border-radius: 5px"
-              src="https://drive.google.com/file/d/1o-Y_lmoLN8tphwiG4Fu7-WAxCrEEDjk2/preview" width="100%" height="250px"
-              allow="autoplay" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-4 mx-2">
-            <h5 class="testi_video">Testimoni 4</h5>
-            <iframe style="border: 2px solid #552075; border-radius: 5px"
-              src="https://drive.google.com/file/d/1o-Y_lmoLN8tphwiG4Fu7-WAxCrEEDjk2/preview" width="100%" height="250px"
-              allow="autoplay" allowfullscreen></iframe>
-          </div>
-        </div>
+        
       </div>
     </div>
 	</section>
@@ -493,10 +468,7 @@
           </div>
 				</div>
 				<div class="col-md-6 justify-content-center align-self-center my-4 reveal fade-right">
-					<iframe class="border border-white border-4 my-3"
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15849.904988320326!2d106.8221182!3d-6.7115854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c9513f4aa869%3A0x324648220811bf9d!2sKinasih%20Resort%20%26%20Conference!5e0!3m2!1sid!2sid!4v1678184659406!5m2!1sid!2sid"
-						width="100%" height="450" allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
 				</div>
 			</div>
 		</div>
@@ -543,11 +515,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="staticBackdropLabel">Pendaftaran</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" name="close-modal" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="row">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8rrM9iADBc42nzfIWmP5PyF53v648L8G3pCKVsfoUfz4fVw/viewform?embedded=true" width="640" height="769" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
           </div>
         </div>
         <div class="modal-footer">
@@ -657,8 +628,8 @@
 				pauseOnHover: false,
 				arrows: true,
         speed: 300,
-        prevArrow: '<button class="px-2 prev-keg"><i class="fas fa-chevron-circle-left fa-xl"></i></button>',
-        nextArrow: '<button class="px-2 next-keg"><i class="fas fa-chevron-circle-right fa-xl"></i></button>',
+        prevArrow: '<button name="prev-keg" class="px-2 prev-keg"><i class="fas fa-chevron-circle-left fa-xl"></i></button>',
+        nextArrow: '<button name="next-keg" class="px-2 next-keg"><i class="fas fa-chevron-circle-right fa-xl"></i></button>',
 			});
 			$('.testimoni-video').slick({
 				slidesToShow: 3,
