@@ -87,12 +87,6 @@
     border: white solid 1px;
   }
 
-  .btn-go-home:hover{
-    background-color: #8c6a3b;
-    border: white solid 1px;
-    color: #202020;
-  }
-
   .home-info {
     display: flex;
     flex-direction: column;

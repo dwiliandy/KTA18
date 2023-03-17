@@ -101,18 +101,6 @@
 .navbar .navbar-nav .nav-item {
   position: relative;
 }
-.navbar .navbar-nav .nav-item::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #cf80fd;
-  width: 0%;
-  content: "";
-  height: 2px;
-  transition: all 0.5s;
-}
 
 a.dropdown-item{
   padding: 10px;
