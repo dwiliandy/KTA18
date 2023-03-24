@@ -269,6 +269,22 @@ body{
   min-height:300px
 }
 
+.lokasi-gambar{
+  overflow: hidden;
+}
+
+.kinasih{
+  transform: scale(1.4);
+  filter: blur(1px);
+  transition: transform .5s ease-in-out, filter 1.2s ease-in-out;
+}
+
+.kinasih:hover, .kinasih:active {
+  transform: scale(1);
+  filter: blur(0);
+}
+
+
 
 @media screen and (min-width: 600px) {
   .kegiatan {

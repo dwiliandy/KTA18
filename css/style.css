@@ -87,6 +87,10 @@
     border: white solid 1px;
   }
 
+  .btn-go-home:hover{
+    background-color: #FFD54F;
+  }
+
   .home-info {
     display: flex;
     flex-direction: column;
