@@ -236,6 +236,11 @@ body{
   color: #6a1f99;
 }
 
+.pp2:hover, .nn2:hover{
+  color: #ffd54f;
+}
+
+
 .testi_video{
   text-align: center;
 }
