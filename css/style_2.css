@@ -1,5 +1,6 @@
 body{
   background-color: #eee;
+  /* font-family: Helvetica, Arial, sans-serif; */
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   overflow-x: hidden;
 }
@@ -176,19 +177,19 @@ body{
   width: 8em;
   height: 8em;
   border-radius: 50%;
-  border: 5px solid #FFD54F;
+  border: 5px solid #F29D35;
   margin-left: auto;
   margin-right: auto;
 
 }
 
 .testi-name{
-  color: #FFD54F;
+  color: #F29D35;
   font-size: 1.2em;
 }
 
 .testi-campus{
-  color: #FFD54F;
+  color: #F29D35;
   font-size: .9em;
 }
 
@@ -226,18 +227,18 @@ body{
 
 .prev2, .next2{
   border: none;
-  color: #180027;
+  color: #0A6AA6;
   background-color: transparent;
   padding: 20px 0;
   font-size: 1.5em;
 }
 
 .prev2:hover, .next2:hover{
-  color: #6a1f99;
+  color: #233A59;
 }
 
 .pp2:hover, .nn2:hover{
-  color: #ffd54f;
+  color: #F29D35;
 }
 
 
@@ -248,7 +249,7 @@ body{
 .card-kegiatan{
   border-radius: 20px;
   overflow: hidden;
-  border: 3px solid #FFD54F;
+  border: 3px solid #F29D35;
 }
 
 .kegiatan {
@@ -315,8 +316,8 @@ body{
 
   
   .card-0 {
-    color: #fff;
-    background-color: #536DFE;
+    color: #FEFDFF;
+    background-color: #0A6AA6;
     position: relative;
     margin-left: 70px;
     border-radius: 10px;
@@ -326,7 +327,7 @@ body{
 
   .profile {
     color: #000;
-    background-color: #FFD54F;
+    background-color: #F29D35;
     position: absolute;
     left: -70px;
     top: 30%;
@@ -343,12 +344,12 @@ body{
   }
   .testi-name{
     font-size: .8em;
-    color: black;
+    color: #233A59;
   }
 
   .testi-campus{
     font-size:0.7em;
-    color: black;
+    color: #233A59;
   }
 
   .open-quotes {
@@ -359,6 +360,8 @@ body{
   .content {
     margin-left: 150px;
     margin-right: 80px;
+    color: #FEFDFF;
+    letter-spacing: 1px;
   }
 
   .close-quotes {
