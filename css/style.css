@@ -11,49 +11,54 @@
 /*---------------------------------------
        PRE LOADER              
   -----------------------------------------*/
-
-  .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
+  .load{
     width: 100%;
-    height: 100%;
-    z-index: 99999;
+    height: 100vh;
+    z-index: 100000;
+    background-color: #243c5e;
     display: flex;
+    position: fixed;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background: none repeat scroll 0 0 #ffffff;
   }
-
-  .spinner {
-    border: 1px solid transparent;
-    border-radius: 3px;
-    position: relative;
-  }
-
-  .spinner:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 45px;
-    height: 45px;
-    margin-top: -10px;
-    margin-left: -10px;
+  .loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #F29D35;
+    /* Dark Green */
     border-radius: 50%;
-    border: 1px solid #575757;
-    border-top-color: #ffffff;
-    animation: spinner .9s linear infinite;
+    width: 180px;
+    height: 180px;
+    animation: spinloader 2s linear infinite;
   }
 
-  @-webkit-@keyframes spinner {
-    to {transform: rotate(360deg);}
+  .load img {
+      height: 130px;
+      width: 130px;
+      position: absolute;
+      border-radius: 50%;
+      /* animation: spinlogo 2s linear infinite; */
   }
 
-  @keyframes spinner {
-    to {transform: rotate(360deg);}
+  @keyframes spinloader {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  @keyframes spinlogo {
+      0% {
+          transform: rotate(360deg);
+      }
+
+      100% {
+          transform: rotate(0deg);
+      }
   }
 
   /*---------------------------------------
