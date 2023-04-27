@@ -22,44 +22,68 @@
     justify-content: center;
     align-items: center;
   }
-  .loader {
-    border: 16px solid #f3f3f3;
-    /* Light grey */
-    border-top: 16px solid #F29D35;
-    /* Dark Green */
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    animation: spinloader 2s linear infinite;
-  }
+
 
   .load img {
-      height: 130px;
-      width: 130px;
+      height: 200px;
+      width: 200px;
       position: absolute;
-      border-radius: 50%;
+      border-radius: 20%;
+      -webkit-animation: breathing 2s ease-out infinite normal;
+      animation: breathing 2s ease-out infinite normal;
+      -webkit-font-smoothing: antialiased;
       /* animation: spinlogo 2s linear infinite; */
   }
 
-  @keyframes spinloader {
-      0% {
-          transform: rotate(0deg);
-      }
-
-      100% {
-          transform: rotate(360deg);
-      }
+  @-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
   }
 
-  @keyframes spinlogo {
-      0% {
-          transform: rotate(360deg);
-      }
 
-      100% {
-          transform: rotate(0deg);
-      }
-  }
 
   /*---------------------------------------
       HOME          

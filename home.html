@@ -39,15 +39,25 @@
   <div class="load">
     <div class="loader">
     </div>
-    <img src="images/flyer.jpeg" />
+    <img src="images/logo.png" />
   </div>
   
 	<!-- Navbar -->
 	<nav id="navbar" class="navbar navbar-expand-lg pb-3 p-lg-0 sticky-top bg-purple" data-bs-theme="dark">
 		<div class="container">
-			<a class="navbar-brand" id="logo" href="index.html">
-				<h4>KTA XVIII</h4>
-			</a>
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex" href="index.html">
+          <img src="images/logo.png" alt="Logo" width="60px" height="60px" class="d-inline-block align-text-top">
+           <span class="align-middle ps-2">Kamp Tahunan <br> Alumni XVIII</span>
+        </a>
+      </div>
+			<!-- <a class="navbar-brand" id="logo" href="index.html">
+        <div class="row">
+          <img class="navbar-logo" src="images/logo.png" alt="">
+          <h4>KTA XVIII</h4>
+
+        </div>
+			</a> -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -145,7 +155,7 @@
           
       </div>
       <div id="church" class="col-md-6 d-none d-md-block align-self-center py-5 reveal fade-right">
-        <img src="images/flyer.jpeg" loading="lazy" class="w-100 float-end border border-end-0 shadow-sm"
+        <img src="images/flyer.jpeg" loading="lazy" class="w-75 float-end border border-end-0 shadow-sm"
           style="border-radius: 30% 0 0 30%;" alt="Flyer">
   
       </div>
@@ -830,11 +840,11 @@
 			}
 		});
 
-		
 
 		$(document).ready(function() {
 
-      $('.load').fadeOut(1000); // set duration in brackets    
+      $('.load').fadeOut(2000); 
+      // set duration in brackets    
       var sectionIds = $('a.nav-link');
 
       $(document).scroll(function(){

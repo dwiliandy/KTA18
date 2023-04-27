@@ -5,6 +5,11 @@
   /* z-index: auto; */
 }
 
+.navbar-logo{
+  width: 80px;
+  height: 80px;
+}
+
 .bg-trans{
   background-color: rgba(10, 106, 166, .8);
   transition: .5s ease-in-out;
@@ -79,5 +84,11 @@
 }
 .navbar .navbar-nav .nav-item {
   position: relative;
+}
+
+@media screen and (max-width: 980px) {
+  .navbar-brand{
+    justify-content: center;
+  }
 }
 
