@@ -217,27 +217,28 @@ body{
   border: 3px solid #F29D35;
 }
 
-.kegiatan {
-  position: absolute;
-  margin: 0;
-  bottom: -25%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+.image-kegiatan{
+  max-height:400px
+}
+
+.text-kegiatan{
+  position: relative;
+  margin-top: -50px;
+  color: white;
+  margin-bottom: 0;
+  height: 60px;
+  background-image: linear-gradient(to top,rgb(255,213,79) 0% ,rgb(243, 199, 54) 30%, transparent);
+}
+
+.text-kegiatan > h2{
+  
   text-transform: uppercase;
-  color: wheat;
-  text-shadow: -2px 2px 0 #000,
+  color: #eee;
+  text-shadow: -1px 1px 0 #000,
                 1px 1px 0 #000,
                 1px -1px 0 #000,
                 -1px -1px 0 #000;
   letter-spacing: .2rem;
-  /* height: 15%; */
-  padding: 40px 0 35px 0;
-  background-image: linear-gradient(to top,rgb(255,213,79) , transparent);
-}
-
-.image-kegiatan{
-  min-height:300px
 }
 
 .lokasi-gambar{
