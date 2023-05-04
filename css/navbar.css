@@ -3,6 +3,7 @@
   min-height: 70px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   /* z-index: auto; */
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar-logo{
@@ -18,7 +19,7 @@
 }
 
 .bg-trans.navbar a{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -57,7 +58,7 @@
 }
 
 .navbar a{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
