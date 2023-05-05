@@ -8,6 +8,96 @@ body{
   font-family: 'Inter', sans-serif;
 }
 
+#slider{
+  margin-top: -90px;
+  padding-top:90px;
+}
+
+.carousel-inner{
+  overflow:hidden;
+  max-height:88vh
+}
+
+#about{
+  background-color:#233A59;
+}
+
+#about > .row{
+  padding-top:70px
+}
+
+.img-flyer{
+  border-radius: 30% 0 0 30%;
+}
+
+#testimoni{
+  min-height: 100vh;
+}
+
+#kegiatan{
+  min-height: 100vh;
+  background-color:#233A59;
+}
+
+#kegiatan > .container{
+  padding-top:70px;
+}
+
+#sesi{
+  min-height: 100vh;
+  background-color:#0A6AA6;
+}
+
+.sesi-kapsel{
+  background-color: white;
+}
+
+#daftar{
+  min-height: 100vh;
+}
+
+#daftar > .row{
+  padding-top:70px;
+  background-color:#0A6AA6;
+}
+
+.pendaftaran {
+  min-height:100vh;
+  background-color:white;
+}
+
+.pencarian-dana{
+  min-height:100vh;
+  background-color:#0A6AA6;
+}
+
+#lokasi{
+  min-height: 100vh;
+  background-color:#FEFDFF;
+  padding-top:80px;
+}
+
+.lokasi-text{
+  color:#233A59;
+}
+
+footer{
+  background-color: #0A6AA6;
+}
+
+.website{
+  background-color: white;
+  border-radius:50%;
+  padding:1px;
+}
+
+.footer-date{
+  background-color: rgba(35, 58, 89, .2);
+}
+
+.slick-next:hover{
+  color: #000;
+}
 
 /*---------------------------------------
        PRE LOADER              
@@ -126,6 +216,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding:70px 0
 }
 
 .card-0 {
@@ -146,16 +237,6 @@ body{
   margin-left: auto;
   margin-right: auto;
 
-}
-
-.testi-name{
-  color: #F29D35;
-  font-size: 1.2em;
-}
-
-.testi-campus{
-  color: #F29D35;
-  font-size: .9em;
 }
 
 .quote{
@@ -397,12 +478,19 @@ body{
   }
   .testi-name{
     font-size: .8em;
+    font-weight: bolder;
     color: #233A59;
   }
 
   .testi-campus{
     font-size:0.7em;
+    font-weight: bolder;
     color: #233A59;
+  }
+
+  .video-class{
+    border: 2px solid #0A6AA6;
+    border-radius: 5px;
   }
 
   .open-quotes {
